@@ -1,0 +1,170 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#9492cd,#b69ccb,#a7a1ce,#bfacd3, #b4acd4);
+}
+
+main{
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 1px 1px black;
+}
+
+.hero-welcome{
+    padding: 50px;
+    background:
+        radial-gradient(
+            ellipse at 45% 42%,
+            #895fb2 0%,
+            transparent 65%
+        ),
+        radial-gradient(
+            ellipse at 90% 15%,
+            #f4e5f9 0%,
+            transparent 55%
+        ),
+        linear-gradient(
+            165deg,
+            #4f4886 0%,
+            #3d3c78 30%,
+            #895fb2 58%,
+            #b8b7d9 100%
+        );
+    height: 650px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0 15px;
+}
+
+.hero-welcome h1{
+    color: white;
+    font-weight: normal;
+}
+
+.hero-content{
+    padding: 50px;
+    flex: 2;
+}
+
+.hero-content h2{
+    padding-bottom: 15px;
+    font-size: 35px;
+}
+
+.hero-content p{
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select
+{
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid,
+input[type="date"]:valid,
+select:valid
+{
+    border: 2px solid green;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="password"]:invalid,
+input[type="date"]:invalid,
+select:invalid
+{
+    border: 2px solid red;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus
+{
+    border: 2px solid purple;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"]
+{
+    padding: 15px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.hero-form-contract {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"]{
+    width:20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #895fb2;
+    border-radius: 15%;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #895fb2;
+}
+
+select{
+    padding: 10px;
+}
+
+.hero-form-input{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 15px;
+    margin: 15px 15px 15px 0;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: purple;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.hero-form-sign-in{
+    text-align: center;
+}

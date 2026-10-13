@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-welcome">
+        <h1>Welcome to <strong>Elevate</strong></h1>
+      </section>
+      <section class="hero-content">
+        <header>
+          <h2>Sign Up</h2>
+          <p>Create a account to acess the job</p>
+        </header>
+        <form class="hero-form">
+            <div class="hero-form-input">
+                <input type="text" placeholder="First Name" required/>
+                <input type="text" placeholder="Last Name" required/>
+                <input type="email" placeholder="Email Address" required/>
+                <select name="userGender" id="userGender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Masculino">Male</option>
+                    <option value="Feminino">Female</option>
+                </select>
+                <input type="tel" placeholder="(11) 99999-9999" required/>
+                <input type="date" required/>
+                <input type="password" placeholder="Create Password" required/>
+                <input type="password" placeholder="Confirm Password" required/>
+            </div>
+            <div class="hero-form-contract">
+                <input type="checkbox" name="heroContract" id="heroContract" />
+                <label for="heroContract">I agree to the Terms of Service and Privacy Policy</label>
+            </div>
+            <div class="hero-form-submit">
+                <input type="submit" value="Sign Up" />
+            </div>
+            <div class="hero-form-sign-in">
+                <p>Already hae an account? <b>Sign in</b></p>
+                <p>------------ OR --------------</p>
+            </div>
+          </form>
+
+      </section>
+    </main>
+  </body>
+</html>
